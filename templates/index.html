@@ -14,7 +14,7 @@
         <script src="{{ url_for('static', filename='website.interact.js') }}"></script>
     </header>
     <h2>
-        Insert new data:
+        Insert New Shipment:
     </h2><br>
     <form id="insert">
         <div>
@@ -33,5 +33,34 @@
             <label for="price">Price:</label>
             <input id="price" name="price" type="number" min="0" step="0.1" required>
         </div><br>
+        <button type="submit">Submit</button>
     </form>
+    <h2>
+        Increase Supplier Status:
+    </h2>
+    <table>
+        <tr>
+            <th>Supplier</th>
+        </tr>
+            {% for supplier in suppliers %}
+                <tr>
+                    <td id="{{ supplier }}">{{  supplier }}</td>
+                    <td><button class="increase" id="{{ supplier }}">Increase Status</button></td>
+                </tr>
+            {% endfor %}
+    </table>
+    <h2>
+        Display All Suppliers:
+    </h2>
+    <button id="display_all" name="display_all">Display All</button>
+    <table id="all_suppliers"></table>
+    <h2>
+        Find Part Number:
+    </h2>
+    <form>
+        <label for="get_pno">Pno: </label>
+        <input id="get_pno" name="get_pno" type="text" required>
+        <button type="submit">Submit</button>
+    </form>
+    <table id="show_pno"></table>
 </body>

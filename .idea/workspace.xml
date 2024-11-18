@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5fc902-d811-49f4-bb13-e6abea1feed1" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/static/website.interact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FlaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FlaskProject.iml" afterDir="false" />
+    <list default="true" id="5b5fc902-d811-49f4-bb13-e6abea1feed1" name="Changes" comment="Template added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/website.interact.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/website.interact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,17 @@
         <option value="Flask Main" />
         <option value="JavaScript File" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -52,6 +62,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Flask server.Flask (app.py).executor&quot;: &quot;Run&quot;,
     &quot;Flask server.FlaskProject.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -62,10 +73,17 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RunManager">
     <configuration name="FlaskProject" type="Python.FlaskServer">
+      <option name="additionalOptions" value="--host=&quot;localhost&quot; --port=4560" />
+      <option name="flaskDebug" value="true" />
       <module name="FlaskProject" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
@@ -73,6 +91,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (FlaskProject)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -107,7 +126,42 @@
       <workItem from="1731957527308" duration="94000" />
       <workItem from="1731957631082" duration="170000" />
       <workItem from="1731957810533" duration="94000" />
-      <workItem from="1731957915114" duration="65000" />
+      <workItem from="1731957915114" duration="108000" />
+      <workItem from="1731958035331" duration="83000" />
+      <workItem from="1731958124558" duration="58000" />
+      <workItem from="1731958201805" duration="47000" />
+      <workItem from="1731958252888" duration="138000" />
+      <workItem from="1731958401728" duration="899000" />
+      <workItem from="1731959661150" duration="190000" />
+      <workItem from="1731959876125" duration="44000" />
+      <workItem from="1731959937931" duration="224000" />
+      <workItem from="1731960181224" duration="112000" />
+      <workItem from="1731960310784" duration="303000" />
+      <workItem from="1731960627091" duration="124000" />
+      <workItem from="1731960775027" duration="19000" />
+      <workItem from="1731960800763" duration="13000" />
+      <workItem from="1731960819176" duration="17000" />
+      <workItem from="1731960842417" duration="22000" />
+      <workItem from="1731960871730" duration="86000" />
+      <workItem from="1731960962002" duration="27000" />
+      <workItem from="1731960995188" duration="68000" />
+      <workItem from="1731961075056" duration="11000" />
+      <workItem from="1731961092531" duration="24000" />
+      <workItem from="1731961123601" duration="11000" />
+      <workItem from="1731961138808" duration="41000" />
+      <workItem from="1731961188726" duration="24000" />
+      <workItem from="1731961218732" duration="36000" />
+      <workItem from="1731961261401" duration="17000" />
+      <workItem from="1731961282100" duration="33000" />
+      <workItem from="1731961322152" duration="95000" />
+      <workItem from="1731961435513" duration="49000" />
+      <workItem from="1731961490684" duration="51000" />
+      <workItem from="1731961559787" duration="16000" />
+      <workItem from="1731961581543" duration="81000" />
+      <workItem from="1731961696854" duration="286000" />
+      <workItem from="1731961993748" duration="303000" />
+      <workItem from="1731962419741" duration="1973000" />
+      <workItem from="1731964592447" duration="175000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -125,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731953090266</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Template added">
+      <option name="closed" value="true" />
+      <created>1731957999978</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731957999978</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,9 +195,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Template added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Template added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FlaskProject$FlaskProject.coverage" NAME="FlaskProject Coverage Results" MODIFIED="1731957972699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/FlaskProject$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1731958476459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/FlaskProject$FlaskProject.coverage" NAME="FlaskProject Coverage Results" MODIFIED="1731964714035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
