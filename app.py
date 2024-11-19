@@ -52,6 +52,38 @@ def increase_shipment():
         return jsonify({'error': str(e)}), 400
 
 
+@app.route('/display-all', methods=['GET'])
+def display_all():
+    try:
+        with mysql.connection.cursor() as cursor:
+            cursor.execute('SELECT * FROM SUPPLIER')
+            suppliers = cursor.fetchall()
+            return jsonify({'status': 'success', 'suppliers': suppliers})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
+
+
+@app.route('/supplier', methods=['POST'])
+def get_supplier():
+    data = request.get_json()
+    pno = [data.get('pno')]
+
+    query_statement = """
+        SELECT S1.* FROM SUPPLIER S1
+        JOIN SHIPMENT S2 ON S1.Sno = S2.Sno
+        WHERE S2.Pno = %s
+        """
+
+    try:
+        with mysql.connection.cursor() as cursor:
+            cursor.execute(query_statement,pno)
+            supplier = cursor.fetchall()
+            print(supplier)
+            return jsonify({'status': 'success', 'suppliers': supplier})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 400
+
+
 @app.route('/')
 def hello_world():  # put application's code here
     with mysql.connection.cursor() as cursor:

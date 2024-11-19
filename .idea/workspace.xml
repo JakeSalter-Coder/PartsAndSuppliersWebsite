@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5fc902-d811-49f4-bb13-e6abea1feed1" name="Changes" comment="Template added">
+    <list default="true" id="5b5fc902-d811-49f4-bb13-e6abea1feed1" name="Changes" comment="Added inserts into shipments and increases to status">
+      <change afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/website.interact.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/website.interact.js" afterDir="false" />
@@ -161,7 +162,11 @@
       <workItem from="1731961696854" duration="286000" />
       <workItem from="1731961993748" duration="303000" />
       <workItem from="1731962419741" duration="1973000" />
-      <workItem from="1731964592447" duration="175000" />
+      <workItem from="1731964592447" duration="200000" />
+      <workItem from="1731967030957" duration="1347000" />
+      <workItem from="1731969544173" duration="3384000" />
+      <workItem from="1731975670249" duration="46000" />
+      <workItem from="1731975730865" duration="243000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -187,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731957999978</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added inserts into shipments and increases to status">
+      <option name="closed" value="true" />
+      <created>1731964786472</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731964786472</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,10 +209,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Template added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Template added" />
+    <MESSAGE value="Added inserts into shipments and increases to status" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added inserts into shipments and increases to status" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FlaskProject$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1731958476459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/FlaskProject$FlaskProject.coverage" NAME="FlaskProject Coverage Results" MODIFIED="1731964714035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/FlaskProject$FlaskProject.coverage" NAME="FlaskProject Coverage Results" MODIFIED="1731975822965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

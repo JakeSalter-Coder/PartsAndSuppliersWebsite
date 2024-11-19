@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="{{ url_for('static', filename='website.interact.js') }}"></script>
+        <script src="{{ url_for('static', filename='style.css') }}"></script>
     </header>
     <h2>
         Insert New Shipment:
@@ -55,11 +56,11 @@
     <button id="display_all" name="display_all">Display All</button>
     <table id="all_suppliers"></table>
     <h2>
-        Find Part Number:
+        Find Supplier Information:
     </h2>
-    <form>
-        <label for="get_pno">Pno: </label>
-        <input id="get_pno" name="get_pno" type="text" required>
+    <form id="get-supplier">
+        <label for="get-pno">Pno: </label>
+        <input id="get-pno" name="get-pno" type="text" required>
         <button type="submit">Submit</button>
     </form>
     <table id="show_pno"></table>
