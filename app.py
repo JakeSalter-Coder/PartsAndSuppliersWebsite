@@ -87,6 +87,6 @@ def get_supplier():
 @app.route('/')
 def hello_world():  # put application's code here
     with mysql.connection.cursor() as cursor:
-        cursor.execute('select sno from supplier')
+        cursor.execute('SELECT Sno FROM SUPPLIER')
         suppliers = [row[0] for row in cursor.fetchall()]
     return render_template('index.html', suppliers=suppliers)
